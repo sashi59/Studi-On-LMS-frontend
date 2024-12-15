@@ -43,8 +43,7 @@ const Header = () => {
               <li>
                 <a href="/about">About</a>
               </li>
-              {isAuth ? (
-                <li>
+              <li>
                   <a
                     className="link link-hover"
                     href="https://www.linkedin.com/in/shashishekhar59/"
@@ -54,11 +53,20 @@ const Header = () => {
                     Contact
                   </a>
                 </li>
-              ) : (
-                <li>
-                  <a href="/signin">Signin</a>
-                </li>
-              )}
+              {isAuth ? (
+              <li>
+              <a className="text-1xl" href="/account">
+                Account
+              </a>
+            </li>
+            ) : (
+              <li>
+                <a className="text-1xl" href="/signin">
+                  Signin
+                </a>
+              </li>
+            )}
+              
             </ul>
           </div>
           <a className="btn btn-ghost text-3xl text-white">STUDI-ON LMS</a>
@@ -80,9 +88,8 @@ const Header = () => {
                 About
               </a>
             </li>
-            {isAuth ? (
-              <li>
-                <a
+            <li>
+            <a
                   className="link link-hover text-2xl"
                   href="https://www.linkedin.com/in/shashishekhar59/"
                   target="_blank"
@@ -91,7 +98,13 @@ const Header = () => {
                 >
                   Contact
                 </a>
-              </li>
+            </li>
+            {isAuth ? (
+              <li>
+              <a className="text-2xl" href="/account">
+                Account
+              </a>
+            </li>
             ) : (
               <li>
                 <a className="text-2xl" href="/signin">
@@ -99,15 +112,7 @@ const Header = () => {
                 </a>
               </li>
             )}
-            {isAuth ? (
-              <li>
-                <a className="text-2xl" href="/account">
-                  Account
-                </a>
-              </li>
-            ) : (
-              ""
-            )}
+            
           </ul>
         </div>
       </div>
