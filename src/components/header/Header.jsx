@@ -83,10 +83,11 @@ const Header = () => {
             {isAuth ? (
               <li>
                 <a
-                  className="link link-hover"
+                  className="link link-hover text-2xl"
                   href="https://www.linkedin.com/in/shashishekhar59/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  
                 >
                   Contact
                 </a>

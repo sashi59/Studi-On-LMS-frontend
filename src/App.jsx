@@ -20,7 +20,7 @@ import AdminCourses from "./admin/AdminCourses";
 import AdminUsers from "./admin/AdminUsers";
 import PaymentSuccess from "./pages/payment/PaymentSuccess";
 
-export const server = "http://localhost:5000";
+export const server = "https://studi-on-lms-server.onrender.com";
 
 function App() {
   const { isAuth, user, loading } = UserData();
